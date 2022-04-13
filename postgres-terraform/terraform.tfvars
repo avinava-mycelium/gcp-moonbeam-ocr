@@ -1,0 +1,16 @@
+name = "moonbeam-ocr"
+database_version = "POSTGRES_14"
+region = "us-east1"
+deletion_protection = false
+project =  "avian-direction-235610"
+tier = "db-f1-micro"
+availability_type = "REGIONAL"
+ipv4_enabled = true
+require_ssl = false
+auth_nw_name = "all"
+auth_nw_value = "0.0.0.0/0"
+zone = "us-east1-a"
+sql_user_name = "sdl"
+sql_user_host = "sdl.com"
+sql_user_password = "sdlpassword@!"
+db_name = "chainlink"
