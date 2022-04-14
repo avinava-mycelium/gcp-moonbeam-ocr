@@ -2,7 +2,6 @@ apiVersion: v1
 data:
   CHAINLINK_TLS_PORT: "{{.Values.configMap.ocr.CHAINLINK_TLS_PORT}}"
   ETH_URL: "{{.Values.configMap.ocr.ETH_URL}}"
-  #ETH_HTTP_URL: "{{.Values.configMap.ocr.ETH_HTTP_URL}}"
   ROOT: "{{.Values.configMap.ocr.ROOT}}"
   SECURE_COOKIES: "{{.Values.configMap.ocr.SECURE_COOKIES}}"
   ALLOW_ORIGINS: "{{.Values.configMap.ocr.ALLOW_ORIGINS}}"

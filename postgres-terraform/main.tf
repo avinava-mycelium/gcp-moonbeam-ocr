@@ -22,10 +22,6 @@ resource "google_sql_database_instance" "master" {
                     value = var.auth_nw_value
                 }
             }
-
-            # location_preference {
-            #     zone = var.zone
-            # }
   }
 }
 
