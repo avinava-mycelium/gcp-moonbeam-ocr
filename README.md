@@ -15,7 +15,7 @@ This project helps up setting a chainlink MOONBEAM node in a kubernetes cluster 
 | Color             | Hex                                                                |
 | ----------------- | ------------------------------------------------------------------ |
 | Setup k8 cluster | ![#0a192f](https://via.placeholder.com/10/0a192f?text=+) k8-cluster-gcp |
-| Setup Postgres DB | ![#f8f8f8](https://via.placeholder.com/10/f8f8f8?text=+) postgres-terraform |
+| Setup Postgres DB | ![#202f0a](https://via.placeholder.com/10/f8f8f8?text=+) postgres-terraform |
 | Helm setup for the chainlink node | ![#00b48a](https://via.placeholder.com/10/00b48a?text=+) helm |
 
 
