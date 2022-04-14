@@ -55,7 +55,7 @@ Install helm ith Homebrew
 
 ## Secrets
 
-All the sensitive data, like API_KEY, API_PASSWORD, DATABASE_URL, FLAGS_CONTRACT_ADDRESS, LINK_CONTRACT_ADDRESS are stored in GCP's secret manager.
+All the sensitive data, like API_KEY, API_PASSWORD, DATABASE_URL, OCR_KEY_BUNDLE_ID, LINK_CONTRACT_ADDRESS etc are stored in GCP's secret manager.
 
 
 ## Environment Variables
@@ -74,14 +74,20 @@ To run this project, you will need to add the following environment variables
 `ETH_SECONDARY_URLS`
 `DEFAULT_HTTP_ALLOW_UNRESTRICTED_NETWORK_ACCESS`
 
-## as secrets in secret_env.yaml file
+## as secrets in external_secret_env.yml file
 
 `DATABASE_URL`
 `LINK_CONTRACT_ADDRESS`
-`FLAGS_CONTRACT_ADDRESS`
+`OCR_KEY_BUNDLE_ID`
+`P2P_PEER_ID`
+`OCR_TRANSMITTER_ADDRESS`
+`P2P_BOOTSTRAP_PEERS`
+`EXPLORER_ACCESS_KEY`
+`EXPLORER_SECRET`
+`EXPLORER_URL`
 
 
-## For passing login credentials (secrets)
+## For passing login credential in external_secret_api.ymls (secrets)
   `API`
   `PASSWORD`
 
