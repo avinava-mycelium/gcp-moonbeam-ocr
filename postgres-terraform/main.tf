@@ -12,6 +12,10 @@ resource "google_sql_database_instance" "master" {
     # type. See argument reference below.
     tier = var.tier
     availability_type = var.availability_type
+    backup_configuration {
+      enabled = var.backup_configuration_enabled
+      point_in_time_recovery_enabled = var.backup_configuration_recovery
+    }
 
      ip_configuration {
                 ipv4_enabled = var.ipv4_enabled
@@ -31,10 +35,10 @@ resource "google_sql_database" "database" {
   instance = google_sql_database_instance.master.name
 }
 
-resource "google_sql_user" "users" {
-  name      = var.sql_user_name
-  project   = var.project
-  instance  = google_sql_database_instance.master.name
-  host      = var.sql_user_host
-  password  = var.sql_user_password
-}
+# resource "google_sql_user" "users" {
+#   name      = var.sql_user_name
+#   project   = var.project
+#   instance  = google_sql_database_instance.master.name
+#   host      = var.sql_user_host
+#   password  = var.sql_user_password
+# }
