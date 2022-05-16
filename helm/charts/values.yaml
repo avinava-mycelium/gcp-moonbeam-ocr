@@ -14,6 +14,9 @@ loadbalancer:
   port: 8068
   ip: 34.74.236.90
 
+securityContext:
+  userId: 2000
+
 image:
   repository: smartcontract/chainlink:1.4.1-nonroot
   pullPolicy: IfNotPresent
