@@ -15,7 +15,7 @@ loadbalancer:
   ip: 34.74.236.90
 
 image:
-  repository: smartcontract/chainlink:1.2.1
+  repository: smartcontract/chainlink:1.4.1-nonroot
   pullPolicy: IfNotPresent
 
 volume:
@@ -45,7 +45,7 @@ configMap:
   ocr: 
     CHAINLINK_TLS_PORT: 0
     ETH_URL: wss://moonbeam.blastapi.io/b3241113-a49c-4604-9464-a6646d5a8dbc
-    ROOT: /chainlink
+    ROOT: /tmp/chainlink
     SECURE_COOKIES: 'false'
     ALLOW_ORIGINS: '*'
     FEATURE_OFFCHAIN_REPORTING: 'true'
@@ -55,6 +55,9 @@ configMap:
     P2P_LISTEN_PORT: 8068
     P2P_ANNOUNCE_PORT: 8068
     P2P_ANNOUNCE_IP: 34.74.236.90
+    LOG_FILE_DIR: /tmp/chainlink
+    DATABASE_LOCKING_MODE: lease
+
 
 configMapSecrets:
   DATABASE_URL: DATABASE_URL
