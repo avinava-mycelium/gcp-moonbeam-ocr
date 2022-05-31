@@ -30,15 +30,15 @@ resource "google_sql_database_instance" "master" {
 }
 
 resource "google_sql_database" "database" {
-  name     = var.db_name
+  name     = local.db-name
   project = var.project
   instance = google_sql_database_instance.master.name
 }
 
-# resource "google_sql_user" "users" {
-#   name      = var.sql_user_name
-#   project   = var.project
-#   instance  = google_sql_database_instance.master.name
-#   host      = var.sql_user_host
-#   password  = var.sql_user_password
-# }
+resource "google_sql_user" "users" {
+  name      = local.sql_user_name
+  project   = var.project
+  instance  = google_sql_database_instance.master.name
+  host      = local.sql_user_host
+  password  = local.sql_user_password
+}

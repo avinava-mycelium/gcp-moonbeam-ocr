@@ -11,7 +11,3 @@ ipv4_enabled = true
 require_ssl = false
 auth_nw_name = "all"
 auth_nw_value = "0.0.0.0/0"
-sql_user_name = "sdl"
-sql_user_host = "sdl.com"
-sql_user_password = "sdlpassword@!"
-db_name = "chainlink"
